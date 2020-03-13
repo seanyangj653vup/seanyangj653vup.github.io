@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+* a {
+  scroll-behavior: smooth;
+}
+
+body #header {
+  height: 100px;
+  position: fixed;
+  z-index: 100000;
+}
+
+body #header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #header nav ul li {
+  color: grey;
+  padding: 10px;
+}
+
+body #header nav ul li img:hover {
+  -webkit-filter: contrast(0.1);
+          filter: contrast(0.1);
+}
+
+body #intro {
+  height: 100vh;
+}
+
+body #intro #intro-content {
+  position: relative;
+}
+
+body #intro #intro-content img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+
+body #intro #intro-content h1 {
+  color: snow;
+  position: absolute;
+  margin: 550px 200px 0 0;
+  right: 0;
+  text-align: right;
+  font-size: 84px;
+  text-shadow: 1px 1px 1px grey, 1px 2px 1px grey, 1px 3px 1px grey, 1px 4px 1px grey, 1px 5px 1px grey;
+  opacity: .1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body #intro #intro-content h1.fade-in {
+  opacity: .9;
+  margin-top: 500px;
+}
+
+body #first {
+  width: 100%;
+  height: 100vh;
+}
+
+body #first #first-content {
+  width: inherit;
+  height: inherit;
+  background: white;
+  position: relative;
+}
+
+body #first #first-content h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body #second {
+  width: 100%;
+  height: 100vh;
+}
+
+body #second #second-content {
+  width: inherit;
+  height: inherit;
+  background: black;
+  position: relative;
+  opacity: .2;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body #second #second-content h2 {
+  color: white;
+  top: 10%;
+  left: 10%;
+  position: relative;
+}
+
+body #second #second-content #skill-graph {
+  width: 50%;
+  top: 10%;
+  left: 10%;
+  position: relative;
+}
+
+body #second #second-content.fade-in {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */

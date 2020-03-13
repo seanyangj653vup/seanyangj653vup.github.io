@@ -1,0 +1,102 @@
+* {
+    // margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    a {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    #header {
+        height: 100px;
+        position: fixed;
+        z-index: 100000;
+        nav {
+            ul {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                li {
+                    color: grey;
+                    padding: 10px;
+                    img:hover {
+                        filter: contrast(.1);
+                    }
+                }
+            }
+        }
+    }
+    #intro {
+        height: 100vh;
+        #intro-content {
+            position: relative;
+            img {
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+                position: absolute;
+            }
+            h1 {
+                color: snow;
+                position: absolute;
+                margin: 550px 200px 0 0;
+                right: 0;
+                text-align: right;
+                font-size: 84px;
+                text-shadow: 1px 1px 1px grey, 1px 2px 1px grey, 1px 3px 1px grey, 1px 4px 1px grey, 1px 5px 1px grey;
+                opacity: .1;
+                transition: 1s;
+            }
+            h1.fade-in {
+                opacity: .9;
+                margin-top: 500px;
+            }
+        }
+    }
+    #first {
+        width: 100%;
+        height: 100vh;
+        #first-content {
+            width: inherit;
+            height: inherit;
+            background: white;
+            position: relative;
+            h1 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    #second {
+        width: 100%;
+        height: 100vh;
+        #second-content {
+            width: inherit;
+            height: inherit;
+            background: black;
+            position: relative;
+            opacity: .2;
+            transition: 1s;
+            h2 {
+                color: white;
+                top: 10%;
+                left: 10%;
+                position: relative;
+            }
+            #skill-graph {
+                width: 50%;
+                top: 10%;
+                left: 10%;
+                position: relative;
+            }
+        }
+        #second-content.fade-in {
+            opacity: 1;
+        }
+    }
+}
